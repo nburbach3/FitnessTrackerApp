@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+    background-color: #f5f5f5;
+}
+
+.col {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 0 12px;
+}
+
+.row {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    width: -webkit-fill-available;
+}
+
+.col-3 {
+    width: 33.3333333333333333333%;
+}
+
+.col-6 {
+    width: 66.6666666666666666666%;
+}
+
+.col-1 {
+    width: 10%;
+}
+
+.landing-image-container {
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    background-image: url('../../assets/homePageBackground.jpg');
+    background-size: cover;
+    background-position: 0% 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.services-container {
+    height: 50vh;
+}
+
+.text {
+    font-size: 16px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.text h1 {
+    margin-bottom: 40px;
+}
+
+.text .button {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.text .button:hover {
+    background-color: #1565C0;
+}
+
+.animate-text {
+    opacity: 1;
+}

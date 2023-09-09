@@ -1,0 +1,35 @@
+  #footer {
+    background-color: #fff;
+    color: #222326;
+    text-align: center;
+    height: 30vh;
+  }
+
+  .footer-section {
+    padding: 5rem 10rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    max-height: 40px;
+  }
+  
+  .footer-links a {
+    color: #222326;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #2196F3;
+  }
